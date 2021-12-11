@@ -1,0 +1,29 @@
+@keyframes pulsation {
+    from {
+        box-shadow: 0 0 0 0 #000a;
+    }
+    to {
+        box-shadow: 0 0 0 0.3em #0001;
+    }
+}
+
+@keyframes loop {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    from {
+        color: #0000;
+        height: 0vmin;
+    } 35%{
+        color: #0000;
+        height: 30vmin;
+    } to {
+        color: #000;
+        height: 49vmin;
+    }
+}

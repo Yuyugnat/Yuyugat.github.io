@@ -1,0 +1,172 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*::selection{
+    background: #000a;
+    color: #ff5454;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #cadbad;
+    height: 100vh;
+    position: relative;
+}
+
+.centered-bottom{
+    position: absolute;
+    left: calc(50% - var(--width)/2);
+    top: calc(64% - var(--height) / 2);
+}
+
+.centered-top{
+    position: absolute;
+    left: calc(50% - var(--width)/2);
+    top: calc(30% - var(--height) / 2);
+}
+
+.centered{
+    position: absolute;
+    left: calc(50% - var(--width)/2);
+    top: calc(50% - var(--height) / 2);
+}
+
+.center{
+    display: grid;
+    place-items: center;
+}
+
+#principal{
+    --height: 25vmin;
+    --width: 50vmin;
+    height: var(--height);
+    width: var(--width);
+    border-radius: 12.5vmin;
+    background:#cadbad;
+    border: solid 0.5vmin ;
+    font-size: 6vmin;
+    text-align: center;
+    font-weight: 500;
+    transition: 1s;
+    animation: pulsation 1s ease-out infinite;
+    z-index: 1;
+}
+
+ #principal:hover {
+     --height: 75vmin;
+     animation: none;
+ }
+
+ #principal:hover>#title{
+     border-radius: 12.5vmin 12.5vmin 0 0;
+     background: #fff3;
+     height: 20vmin;
+     border-bottom: solid 0.4vmin #0007;
+ }
+
+#title{
+    height: 25vmin;
+    width: 50vmin;
+    border-radius: 12.5vmin;
+    transition: 1s;
+}
+
+.hide{
+    display: none;
+}
+
+.big-ones {
+    height: 46%;
+    width: 47.5%;
+    transition: 1s;
+    font-size: 2vmin;
+    position: absolute;
+    border: solid 1vmin #0005;
+    font-size: 1vmin;
+}
+
+.centered-bigs {
+    border-radius: 5em 5em 5em 5em;
+}
+
+
+#projets-finis {
+    background: #ff5454;
+    border-radius: 5em 0 0 0;
+    top: 1%;
+    left: 1%;
+}
+
+#projets {
+    background: #f5ff82;
+    border-radius: 0 5em 0 0;
+    top: 1%;
+    right: 1%;
+}
+
+#reseaux {
+    background: #91de76;
+    border-radius: 0 0 0 5em;
+    bottom: 1%;
+    left: 1%;
+}
+
+#autre {
+    background: #83a2e6;
+    border-radius: 0 0 5em 0;
+    bottom: 1vmin;
+    right: 1%;
+}
+
+.bouton {
+    --height: 10vmin;
+    --width: 10vmin;
+    height: var(--height);
+    width: var(--width);
+    box-shadow: 0 0 0 1vmin black;
+    border-radius: 50%;
+    transition: 1s;
+    background: #fff5;
+}
+
+.bouton:hover {
+    cursor: pointer;
+}
+
+.bouton>div{
+    border-radius: 100000px;
+    background: black;
+}
+
+
+.bouton>.horiz {
+    --height: 10%;
+    --width: 70%;
+    height: var(--height);
+    width: var(--width);
+}
+
+.bouton>.verti {
+    --height: 70%;
+    --width: 10%;
+    height: var(--height);
+    width: var(--width);
+}
+
+h1 {
+    --height: 30%;
+    --width: 60%;
+    height: var(--height);
+    width: var(--width);
+    font-size: 5em;
+    font-weight: 600;
+    transition: 1s;
+    text-align: center;
+}
