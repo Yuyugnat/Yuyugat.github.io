@@ -8,6 +8,10 @@
     color: #ff5454;
 }
 
+*::after{
+    background: #000a;
+}
+
 body{
     background: #cadbad;
 }
