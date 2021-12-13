@@ -116,6 +116,27 @@ bp.addEventListener('click', () => {
         bigp.childNodes[1].style.height = '';
         bigp.childNodes[1].style.borderBottom = 'solid 2px #0000';
 
+        if (window.matchMedia('(orientation : landscape)').matches && window.matchMedia('(min-width: 751px)').matches) {
+
+            bigp.childNodes[3].style.bottom = '';
+
+        } else {
+
+            bigp.style.top = '';
+            for (let i = 0; i < 4; i++) {
+
+                if (i !== 1){
+
+                    document.getElementsByClassName('big-ones')[i].style.filter = 'blur(0px)';
+
+                }
+        
+            }
+
+            document.getElementById('principal').style.filter = 'blur(0px)';
+
+        }
+
         bpState = true;
     } else {
         bp.classList.add('grow-button');
@@ -129,6 +150,27 @@ bp.addEventListener('click', () => {
         bigp.childNodes[1].style.top = '1vh';
         bigp.childNodes[1].style.height = '11vh';
         bigp.childNodes[1].style.borderBottom = 'solid 2px #0009';
+
+        if (window.matchMedia('(orientation : landscape)').matches && window.matchMedia('(min-width: 751px)').matches) {
+
+            
+
+        } else {
+
+            bigp.style.top = '5vh';
+            for (let i = 0; i < 4; i++) {
+
+                if (i !== 1){
+
+                    document.getElementsByClassName('big-ones')[i].style.filter = 'blur(5px)';
+
+                }
+        
+            }
+
+            document.getElementById('principal').style.filter = 'blur(5px)';
+
+        }
 
         bpState = false;
     }
@@ -155,6 +197,27 @@ br.addEventListener('click', () => {
         bigr.childNodes[1].style.height = '';
         bigr.childNodes[1].style.borderBottom = 'solid 2px #0000';
 
+        if (window.matchMedia('(orientation : landscape)').matches && window.matchMedia('(min-width: 751px)').matches) {
+
+            bigr.childNodes[3].style.bottom = '';
+
+        } else {
+
+            bigr.style.top = '';
+            for (let i = 0; i < 4; i++) {
+
+                if (i !== 2){
+
+                    document.getElementsByClassName('big-ones')[i].style.filter = 'blur(0px)';
+
+                }
+        
+            }
+
+            document.getElementById('principal').style.filter = 'blur(0px)';
+
+        }
+
         brState = true;
     } else {
         br.classList.add('grow-button');
@@ -168,6 +231,27 @@ br.addEventListener('click', () => {
         bigr.childNodes[1].style.top = '1vh';
         bigr.childNodes[1].style.height = '11vh';
         bigr.childNodes[1].style.borderBottom = 'solid 2px #0009';
+
+        if (window.matchMedia('(orientation : landscape)').matches && window.matchMedia('(min-width: 751px)').matches) {
+
+            
+
+        } else {
+
+            bigr.style.top = '5vh';
+            for (let i = 0; i < 4; i++) {
+
+                if (i !== 2){
+
+                    document.getElementsByClassName('big-ones')[i].style.filter = 'blur(5px)';
+
+                }
+        
+            }
+
+            document.getElementById('principal').style.filter = 'blur(5px)';
+
+        }
 
         brState = false;
     }
@@ -194,6 +278,27 @@ ba.addEventListener('click', () => {
         biga.childNodes[1].style.height = '';
         biga.childNodes[1].style.borderBottom = 'solid 2px #0000';
 
+        if (window.matchMedia('(orientation : landscape)').matches && window.matchMedia('(min-width: 751px)').matches) {
+
+            biga.childNodes[3].style.bottom = '';
+
+        } else {
+
+            biga.style.top = '';
+            for (let i = 0; i < 4; i++) {
+
+                if (i !== 3){
+
+                    document.getElementsByClassName('big-ones')[i].style.filter = 'blur(0px)';
+
+                }
+        
+            }
+
+            document.getElementById('principal').style.filter = 'blur(0px)';
+
+        }
+
         baState = true;
     } else {
         ba.classList.add('grow-button');
@@ -207,6 +312,27 @@ ba.addEventListener('click', () => {
         biga.childNodes[1].style.top = '1vh';
         biga.childNodes[1].style.height = '11vh';
         biga.childNodes[1].style.borderBottom = 'solid 2px #0009';
+
+        if (window.matchMedia('(orientation : landscape)').matches && window.matchMedia('(min-width: 751px)').matches) {
+
+            
+
+        } else {
+
+            biga.style.top = '5vh';
+            for (let i = 0; i < 4; i++) {
+
+                if (i !== 3){
+
+                    document.getElementsByClassName('big-ones')[i].style.filter = 'blur(5px)';
+
+                }
+        
+            }
+
+            document.getElementById('principal').style.filter = 'blur(5px)';
+
+        }
 
         baState = false;
     }
