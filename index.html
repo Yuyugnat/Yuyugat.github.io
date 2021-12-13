@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
 
-    <script src="change-class.js" defer></script>
-    
+    <script src="grow.js" defer></script>
+    <script src="blur.js" defer></script>
+
     <style>
-        @import url('index-style.css');
+        @import url('bouton.css');
+        @import url('position-des-gros.css');
+        @import url('global.css');
+        @import url('global-pos.css');
+        @import url('style-des-gros.css');
         @import url('animations.css');
         @import url('infos.css');
     </style>
 </head>
 <body>
-    <div id="principal" class="centered">
-        <div id="title" class="center">
-            Tanguy Macé  
+    <div id="principal" class="landscape-centered mobile-centeredH">
+        <div id="b-principal" class="bouton landscape-hide landscape-centeredH mobile-centeredV">
+            <div class="verti centered"></div>
+            <div class="horiz centered"></div>
         </div>
+        <h1 id="mon-nom" class="center landscape-centered mobile-centeredV">
+            Tanguy Macé  
+        </h1>
         <div id="infos" class="center">
             <div>
                 <div class="informations underline">
@@ -49,33 +58,33 @@
         </div>
     </div>
 
-    <div class="big-ones" id="projets-finis">
-        <h1 class="center centered-top">Projets finis</h1>
-        <div class="bouton centered-bottom">
+    <div class="big-ones normal-bigs mobile-centeredH" id="projets-finis">
+        <h1 class="landscape-centeredH center mobile-centeredV">Projets finis</h1>
+        <div id="b-projets-finis" class="bouton landscape-centeredH mobile-centeredV">
             <div class="verti centered"></div>
             <div class="horiz centered"></div>
         </div>
     </div>
 
-    <div class="big-ones" id="projets">
-        <h1 class="center centered-top">Projets en cours</h1>
-        <div id="b-projets" class="bouton centered-bottom">
+    <div class="big-ones normal-bigs mobile-centeredH" id="projets">
+        <h1 class="landscape-centeredH center mobile-centeredV">Projets en cours</h1>
+        <div  id="b-projets" class="bouton landscape-centeredH mobile-centeredV">
             <div class="verti centered"></div>
             <div class="horiz centered"></div>
         </div>
     </div>
 
-    <div class="big-ones" id="reseaux">
-        <h1 class="center centered-top">Mes réseaux</h1>
-        <div class="bouton centered-bottom">
+    <div class="big-ones normal-bigs mobile-centeredH" id="reseaux">
+        <h1 class="landscape-centeredH center mobile-centeredV">Mes réseaux</h1>
+        <div  id="b-reseaux"class="bouton landscape-centeredH mobile-centeredV">
             <div class="verti centered"></div>
             <div class="horiz centered"></div>
         </div>
     </div>
 
-    <div class="big-ones" id="autre">
-        <h1 class="center centered-top">Autres</h1>
-        <div class="bouton centered-bottom">
+    <div class="big-ones normal-bigs mobile-centeredH" id="autre">
+        <h1 class="landscape-centeredH center mobile-centeredV">Autres</h1>
+        <div  id="b-autre" class="bouton landscape-centeredH mobile-centeredV">
             <div class="verti centered"></div>
             <div class="horiz centered"></div>
         </div>

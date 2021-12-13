@@ -1,0 +1,13 @@
+*{
+    font-size: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*::selection{
+    background: #000a;
+    color: #ff5454;
+}
+
+body{
+    background: #cadbad;
+}

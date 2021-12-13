@@ -1,0 +1,101 @@
+.centered{
+    position: absolute;
+    left: calc(50% - var(--border-width) - var(--width) / 2);
+    top: calc(50% - var(--border-width) - var(--height) / 2);
+}
+
+.centeredH{
+    position: absolute;
+    left: calc(50% - var(--border-width) - var(--width) / 2);
+}
+
+.centeredV{
+    position: absolute;
+    top: calc(50% - var(--border-width) - var(--height) / 2);
+}
+
+.center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (orientation: portrait), (max-width: 750px){
+
+    .mobile-centered{
+        position: absolute;
+        left: calc(50% - var(--border-width) - var(--width) / 2);
+        top: calc(50% - var(--border-width) - var(--height) / 2);
+    }
+    
+    .mobile-centeredH{
+        position: absolute;
+        left: calc(50% - var(--border-width) - var(--width) / 2);
+    }
+    
+    .mobile-centeredV{
+        position: absolute;
+        top: calc(50% - var(--border-width) - var(--height) / 2);
+    }
+    
+    .mobile-center{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .mobile-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile-column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 751px){
+    .landscape-centered{
+        position: absolute;
+        left: calc(50% - var(--border-width) - var(--width) / 2);
+        top: calc(50% - var(--border-width) - var(--height) / 2);
+    }
+    
+    .landscape-centeredH{
+        position: absolute;
+        left: calc(50% - var(--border-width) - var(--width) / 2);
+    }
+    
+    .landscape-centeredV{
+        position: absolute;
+        top: calc(50% - var(--border-width) - var(--height) / 2);
+    }
+    
+    .landscape-center{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .landscape-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .landscape-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landscape-hide{
+        display: none;
+    }
+}

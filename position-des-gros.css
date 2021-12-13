@@ -1,0 +1,148 @@
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+}
+
+
+.big-ones {
+    position: absolute;
+}
+
+
+
+#principal{
+    position: absolute;
+}
+
+
+
+
+
+
+@media screen and (orientation: portrait), (max-width: 750px){
+
+    :root{
+        --espacement: calc(25vh / 6);
+    }
+    .big-ones {
+        
+        height: var(--height);
+        width: var(--width);
+        margin: 0;
+        transition: 1s;
+        border: solid var(--border-width) #0005;
+    }
+
+    .normal-bigs{
+        --height: 15vh;
+        --width: 93vw;
+        --border-width: 0.9vh;
+    }
+
+    .big-bigs{
+        
+        --height: 90vh;
+        --width: 93vw;
+        --border-width: 0.9vh;
+    }
+
+    #projets-finis{
+        top: calc(15vh + 2 * var(--espacement));
+    }
+
+    #projets{
+        top: calc(2 * 15vh + 3 * var(--espacement));
+    }
+
+    #reseaux{     
+        top: calc(3 * 15vh + 4 * var(--espacement));
+    }
+
+    #autre{
+        top: calc(4 * 15vh + 5 * var(--espacement));
+    }
+
+    #principal{
+        --height: 15vh;
+        --width: 93vw;
+        --border-width: 0.9vh;
+        height: var(--height);
+        width: var(--width);
+        top: var(--espacement);
+        border: solid var(--border-width) #0005;
+    }
+
+
+}
+
+@media screen and (orientation: landscape) and (min-width: 751px){
+
+    :root{
+        --normal-height: 46vh;
+    }
+
+    .normal-bigs{
+        --height: var(--normal-height);
+        --width: calc((100vw - 3 * var(--espacement)) / 2 - 2 * var(--border-width));
+        --border-width: 1vmin;
+        --espacement: calc((100vh - 2 * ( 2 * var(--border-width) + var(--height))) / 3);
+    }
+
+    .big-bigs{
+        
+        --height: calc(2 * var(--normal-height) + (100vh - 2 * var(--normal-height) - 2 * var(--border-width)) / 3 * 2);
+        --width: calc((100vw - 2 * var(--espacement)) - 2 * var(--border-width));
+        --border-width: 1vmin;
+        --espacement: calc((100vh - ( 2 * var(--border-width) + var(--height))) / 2);
+    }
+
+    .big-ones {
+        height: var(--height);
+        width: var(--width);
+        border: solid 1vmin #0005;
+        transition: 1s;
+    }
+
+    #projets-finis{
+        top: var(--espacement);
+        left: var(--espacement);
+    }
+
+    #projets{
+        top: var(--espacement);
+        right: var(--espacement);
+    }
+
+    #reseaux{
+        bottom: var(--espacement);
+        left: var(--espacement);
+    }
+
+    #autre{
+        bottom: var(--espacement);
+        right: var(--espacement);
+    }
+
+    :root{
+        --normal-principal-height: 25vh;
+    }
+    #principal{
+        --height: var(--normal-principal-height);
+        --width: calc( 19 / 9 * var(--height));
+        --border-width: 0.5vh;
+        height: var(--height);
+        width: var(--width);
+        
+    }
+
+    #principal:hover {
+        --height: 75vh;
+        --width: calc(19 / 9 * var(--normal-principal-height));
+    }
+
+    
+
+}

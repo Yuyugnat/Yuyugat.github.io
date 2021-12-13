@@ -3,15 +3,7 @@
         box-shadow: 0 0 0 0 #000a;
     }
     to {
-        box-shadow: 0 0 0 0.3em #0001;
-    }
-}
-
-@keyframes loop {
-    from {
-        transform: rotate(0);
-    } to {
-        transform: rotate(360deg);
+        box-shadow: 0 0 0 0.4em #0001;
     }
 }
 
@@ -26,4 +18,12 @@
         color: #000;
         height: 49vmin;
     }
+}
+
+@media screen and (orientation: portrait), (max-width: 750px){
+
+}
+
+@media screen and (orientation: landscape) and (min-width: 751px){
+    
 }
