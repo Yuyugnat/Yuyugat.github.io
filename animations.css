@@ -1,9 +1,9 @@
 @keyframes pulsation {
     from {
-        box-shadow: 0 0 0 0 #000a;
+        box-shadow: 0 0 0 0 #000;
     }
     to {
-        box-shadow: 0 0 0 0.4em #0001;
+        box-shadow: 0 0 0 0.6em #00000001;
     }
 }
 

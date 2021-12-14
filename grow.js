@@ -4,15 +4,59 @@ let bprState = true;
 bpr.addEventListener('click', () => {
 
     if (!bprState){
+
+        bigpr.childNodes[1].classList.remove('mobile-centered');
+
         bpr.classList.remove('grow-button');
         bpr.classList.add('grow-button-r');
+
+        bigpr.style.setProperty('--height', '15vh');
+        bigpr.style.setProperty('background', '');
+        bigpf.style.borderRadius = '';
+        bpr.style.top = '';
+        bpr.style.right = '';
+
+        for (let i = 0; i < 4; i++) {
+
+            document.getElementsByClassName('big-ones')[i].style.filter = 'blur(0px)';
+    
+        }
+
+        bigpr.childNodes[1].style.top = '';
+        bigpr.childNodes[1].style.height = '';
+        bigpr.childNodes[1].style.borderBottom = 'solid 2px #0000';
+
         bprState = true;
     } else {
+
+        bigpr.childNodes[1].classList.add('mobile-centered');
+
         bpr.classList.add('grow-button');
         bpr.classList.remove('grow-button-r');
+        bpr.style.top = '2.5vh';
+        bpr.style.right = '2.5vh';
+
+        bigpr.style.setProperty('--height', '90vh');
+        bigpr.style.setProperty('background', '#fffc');
+        bigpf.style.borderRadius = '1.5em';
+
+        for (let i = 0; i < 4; i++) {
+
+            document.getElementsByClassName('big-ones')[i].style.filter = 'blur(5px)';
+    
+        }
+
+        bigpr.childNodes[1].style.top = '1vh';
+        bigpr.childNodes[1].style.height = '11vh';
+        bigpr.childNodes[1].style.borderBottom = 'solid 2px #0009';
+
         bprState = false;
     }
 });
+
+ /* --height: 15vh;
+        --width: 93vw;
+        --border-width: 0.9vh; */
 
 let bigpf = document.getElementById('projets-finis');
 let bpf = document.getElementById('b-projets-finis');
@@ -40,6 +84,11 @@ bpf.addEventListener('click', () => {
             bigpf.childNodes[3].style.bottom = '';
 
         } else {
+
+            bigpf.childNodes[1].classList.remove('mobile-centered');
+
+            bpf.style.top = '';
+            bpf.style.right = '';
 
             bigpf.style.top = '';
             for (let i = 0; i < 4; i++) {
@@ -75,6 +124,11 @@ bpf.addEventListener('click', () => {
             
 
         } else {
+
+            bigpf.childNodes[1].classList.add('mobile-centered');
+
+            bpf.style.top = '2.5vh';
+            bpf.style.right = '2.5vh';
 
             bigpf.style.top = '5vh';
             for (let i = 0; i < 4; i++) {
@@ -122,6 +176,11 @@ bp.addEventListener('click', () => {
 
         } else {
 
+            bigp.childNodes[1].classList.remove('mobile-centered');
+
+            bp.style.top = '';
+            bp.style.right = '';
+
             bigp.style.top = '';
             for (let i = 0; i < 4; i++) {
 
@@ -156,6 +215,11 @@ bp.addEventListener('click', () => {
             
 
         } else {
+
+            bigp.childNodes[1].classList.add('mobile-centered');
+
+            bp.style.top = '2.5vh';
+            bp.style.right = '2.5vh';
 
             bigp.style.top = '5vh';
             for (let i = 0; i < 4; i++) {
@@ -203,6 +267,11 @@ br.addEventListener('click', () => {
 
         } else {
 
+            bigr.childNodes[1].classList.remove('mobile-centered');
+
+            br.style.top = '';
+            br.style.right = '';
+
             bigr.style.top = '';
             for (let i = 0; i < 4; i++) {
 
@@ -237,6 +306,11 @@ br.addEventListener('click', () => {
             
 
         } else {
+
+            bigr.childNodes[1].classList.add('mobile-centered');
+
+            br.style.top = '2.5vh';
+            br.style.right = '2.5vh';
 
             bigr.style.top = '5vh';
             for (let i = 0; i < 4; i++) {
@@ -284,6 +358,11 @@ ba.addEventListener('click', () => {
 
         } else {
 
+            biga.childNodes[1].classList.remove('mobile-centered');
+
+            ba.style.top = '';
+            ba.style.right = '';
+
             biga.style.top = '';
             for (let i = 0; i < 4; i++) {
 
@@ -318,6 +397,11 @@ ba.addEventListener('click', () => {
             
 
         } else {
+
+            ba.style.top = '2.5vh';
+            ba.style.right = '2.5vh';
+
+            biga.childNodes[1].classList.add('mobile-centered');
 
             biga.style.top = '5vh';
             for (let i = 0; i < 4; i++) {
