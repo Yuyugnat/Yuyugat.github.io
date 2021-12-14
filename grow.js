@@ -15,6 +15,7 @@ bpr.addEventListener('click', () => {
         bigpf.style.borderRadius = '';
         bpr.style.top = '';
         bpr.style.right = '';
+        bigpr.style.borderRadius = '';
 
         for (let i = 0; i < 4; i++) {
 
@@ -38,7 +39,7 @@ bpr.addEventListener('click', () => {
 
         bigpr.style.setProperty('--height', '90vh');
         bigpr.style.setProperty('background', '#fffc');
-        bigpf.style.borderRadius = '1.5em';
+        bigpr.style.borderRadius = '1.5em';
 
         for (let i = 0; i < 4; i++) {
 

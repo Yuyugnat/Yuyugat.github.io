@@ -1,4 +1,5 @@
 
+
 document.getElementById('principal').addEventListener('mouseover', () => {
     let bigs = document.getElementsByClassName('big-ones');
 
