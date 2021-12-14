@@ -1,3 +1,3 @@
-window.matchMedia('(orientation: landscape) and (min-width: 751px)'),addEventListener( () => {
-    Location.relaod();
+window.matchMedia('(orientation: landscape) and (min-width: 741px)').addListener( () => {
+    location.reload();
 });
