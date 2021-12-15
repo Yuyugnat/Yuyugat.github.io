@@ -51,18 +51,22 @@ body{
 
     #projets-finis{
         top: calc(15vh + 2 * var(--espacement));
+        animation: a-p-f 0.8s linear 1;
     }
 
     #projets{
         top: calc(2 * 15vh + 3 * var(--espacement));
+        animation: a-p 0.8s linear 1;
     }
 
     #reseaux{     
         top: calc(3 * 15vh + 4 * var(--espacement));
+        animation: a-r 0.8s linear 1;
     }
 
     #autre{
         top: calc(4 * 15vh + 5 * var(--espacement));
+        animation: a-a 0.8s linear 1;
     }
 
     #principal{
@@ -73,6 +77,7 @@ body{
         width: var(--width);
         top: var(--espacement);
         border: solid var(--border-width) #0005;
+        animation: a-a 0.8s linear 1;
     }
 
 
@@ -109,21 +114,25 @@ body{
     #projets-finis{
         top: var(--espacement);
         left: var(--espacement);
+        animation: a-p-f 0.8s linear 1;
     }
 
     #projets{
         top: var(--espacement);
         right: var(--espacement);
+        animation: a-p 0.8s linear 1;
     }
 
     #reseaux{
         bottom: var(--espacement);
         left: var(--espacement);
+        animation: a-r 0.8s linear 1;
     }
 
     #autre{
         bottom: var(--espacement);
         right: var(--espacement);
+        animation: a-a 0.8s linear 1;
     }
 
     :root{

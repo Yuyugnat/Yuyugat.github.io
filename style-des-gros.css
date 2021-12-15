@@ -86,7 +86,7 @@ h1{
         --width: 100%;
         --border-width: 0px;
         border-radius: 15vh;
-        font-size: 6vh;
+        font-size: calc(var(--normal-principal-height) / 5);
         text-align: center;
         font-weight: 500;
         top: calc(50% - var(--height) / 2 - var(--border-width));

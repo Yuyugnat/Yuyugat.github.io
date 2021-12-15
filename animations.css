@@ -20,10 +20,72 @@
     }
 }
 
+
+
 @media screen and (orientation: portrait), (max-width: 750px){
+
+    @keyframes a-p-f {
+        from {
+            left: calc(-1 * var(--width));
+        }
+    }
+
+    @keyframes a-p {
+        from {
+            left: calc(100vw + 7vw / 2);
+        }
+    }
+
+    @keyframes a-r {
+        from {
+            left: calc(-1 * var(--width));
+        }
+    }
+
+    @keyframes a-a {
+        from {
+            left: calc(100vw + 7vw / 2);
+        }
+    }
+
+    @keyframes a-pr {
+        from {
+            left: calc(100vw + 7vw / 2);
+        }
+    }
 
 }
 
 @media screen and (orientation: landscape) and (min-width: 751px){
+
+    @keyframes a-p-f {
+        from {
+            left: calc(-1 * var(--height));
+        }
+    }
+
+    @keyframes a-p {
+        from {
+            top: calc(-1 * var(--height));
+        }
+    }
+
+    @keyframes a-r {
+        from {
+            bottom: calc(-1 * var(--height));
+        }
+    }
+
+    @keyframes a-a {
+        from {
+            right: calc(-1 * var(--height));
+        }
+    }
+
+    @keyframes a-pr {
+        from {
+            --normal-principal-height: 1vw;
+        }
+    }
     
 }
